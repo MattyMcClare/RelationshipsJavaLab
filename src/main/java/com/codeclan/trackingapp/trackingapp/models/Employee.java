@@ -4,6 +4,7 @@ package com.codeclan.trackingapp.trackingapp.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -51,7 +52,7 @@ public class Employee {
         this.lastName = lastName;
         this.employeeNumber = employeeNumber;
         this.department = department;
-
+        this.projects = new ArrayList<>();
 
     }
 
