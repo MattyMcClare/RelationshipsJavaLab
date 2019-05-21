@@ -21,12 +21,12 @@ public class Department {
 
     @JsonIgnore
     @OneToMany(mappedBy = "department")
-    private List<Employee> employess;
+    private List<Employee> employees;
 
     public Department(String name) {
         this.id = id;
         this.name = name;
-        this.employess = new ArrayList<>();
+        this.employees = new ArrayList<>();
     }
 
     public Department() {
@@ -48,11 +48,11 @@ public class Department {
         this.name = name;
     }
 
-    public List<Employee> getEmployess() {
-        return employess;
+    public List<Employee> getEmployees() {
+        return employees;
     }
 
-    public void setEmployess(List<Employee> employess) {
-        this.employess = employess;
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 }
