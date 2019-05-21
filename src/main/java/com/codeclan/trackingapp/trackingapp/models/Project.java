@@ -81,5 +81,8 @@ public class Project {
         this.employees = employees;
     }
 
+    public void addEmployee(Employee employee){
+        this.employees.add(employee);
+    }
 
 }
